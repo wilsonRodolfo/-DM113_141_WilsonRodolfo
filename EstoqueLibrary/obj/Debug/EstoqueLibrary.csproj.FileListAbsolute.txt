@@ -1,0 +1,13 @@
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EstoqueLibrary.dll.config
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EstoqueLibrary.dll
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EstoqueLibrary.pdb
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EntityFramework.dll
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EntityFramework.SqlServer.dll
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EstoqueEntityModel.dll
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EstoqueEntityModel.pdb
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EstoqueEntityModel.dll.config
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EntityFramework.xml
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\bin\Debug\EntityFramework.SqlServer.xml
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\obj\Debug\EstoqueLibrary.csprojResolveAssemblyReference.cache
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\obj\Debug\EstoqueLibrary.dll
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\EstoqueLibrary\obj\Debug\EstoqueLibrary.pdb

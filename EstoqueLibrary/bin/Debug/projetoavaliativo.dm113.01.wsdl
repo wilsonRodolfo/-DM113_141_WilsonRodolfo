@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://projetoavaliativo.dm113/01" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://projetoavaliativo.dm113/01" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://projetoavaliativo.dm113/01/Imports">
+      <xsd:import namespace="http://projetoavaliativo.dm113/01" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/EstoqueLibrary" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicoEstoque_ListarProdutos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProdutos" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_ListarProdutos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarProdutosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_incluirProduto_InputMessage">
+    <wsdl:part name="parameters" element="tns:incluirProduto" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_incluirProduto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:incluirProdutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_removerProduto_InputMessage">
+    <wsdl:part name="parameters" element="tns:removerProduto" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_removerProduto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removerProdutoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_consultarEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultarEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_consultarEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultarEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_adicionarEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:adicionarEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_adicionarEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:adicionarEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_removerEstoque_InputMessage">
+    <wsdl:part name="parameters" element="tns:removerEstoque" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_removerEstoque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:removerEstoqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_verProduto_InputMessage">
+    <wsdl:part name="parameters" element="tns:verProduto" />
+  </wsdl:message>
+  <wsdl:message name="IServicoEstoque_verProduto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:verProdutoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicoEstoque">
+    <wsdl:operation name="ListarProdutos">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/ListarProdutos" message="tns:IServicoEstoque_ListarProdutos_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/ListarProdutosResponse" message="tns:IServicoEstoque_ListarProdutos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="incluirProduto">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/incluirProduto" message="tns:IServicoEstoque_incluirProduto_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/incluirProdutoResponse" message="tns:IServicoEstoque_incluirProduto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removerProduto">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/removerProduto" message="tns:IServicoEstoque_removerProduto_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/removerProdutoResponse" message="tns:IServicoEstoque_removerProduto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultarEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/consultarEstoque" message="tns:IServicoEstoque_consultarEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/consultarEstoqueResponse" message="tns:IServicoEstoque_consultarEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="adicionarEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/adicionarEstoque" message="tns:IServicoEstoque_adicionarEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/adicionarEstoqueResponse" message="tns:IServicoEstoque_adicionarEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="removerEstoque">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/removerEstoque" message="tns:IServicoEstoque_removerEstoque_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/removerEstoqueResponse" message="tns:IServicoEstoque_removerEstoque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="verProduto">
+      <wsdl:input wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/verProduto" message="tns:IServicoEstoque_verProduto_InputMessage" />
+      <wsdl:output wsaw:Action="http://projetoavaliativo.dm113/01/IServicoEstoque/verProdutoResponse" message="tns:IServicoEstoque_verProduto_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DefaultBinding_IServicoEstoque" type="tns:IServicoEstoque">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListarProdutos">
+      <soap:operation soapAction="http://projetoavaliativo.dm113/01/IServicoEstoque/ListarProdutos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="incluirProduto">
+      <soap:operation soapAction="http://projetoavaliativo.dm113/01/IServicoEstoque/incluirProduto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removerProduto">
+      <soap:operation soapAction="http://projetoavaliativo.dm113/01/IServicoEstoque/removerProduto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultarEstoque">
+      <soap:operation soapAction="http://projetoavaliativo.dm113/01/IServicoEstoque/consultarEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="adicionarEstoque">
+      <soap:operation soapAction="http://projetoavaliativo.dm113/01/IServicoEstoque/adicionarEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removerEstoque">
+      <soap:operation soapAction="http://projetoavaliativo.dm113/01/IServicoEstoque/removerEstoque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verProduto">
+      <soap:operation soapAction="http://projetoavaliativo.dm113/01/IServicoEstoque/verProduto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

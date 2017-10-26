@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://projetoavaliativo.dm113/02" elementFormDefault="qualified" targetNamespace="http://projetoavaliativo.dm113/02" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="adicionarEstoque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numeroProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="quantidade" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="adicionarEstoqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="adicionarEstoqueResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removerEstoque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numeroProduto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="quantidade" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removerEstoqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="removerEstoqueResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarEstoque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numeroProduto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="consultarEstoqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="consultarEstoqueResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
