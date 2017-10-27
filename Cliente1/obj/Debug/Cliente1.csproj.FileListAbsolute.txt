@@ -1,0 +1,6 @@
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\Cliente1\bin\Debug\Cliente1.exe.config
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\Cliente1\bin\Debug\Cliente1.exe
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\Cliente1\bin\Debug\Cliente1.pdb
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\Cliente1\obj\Debug\Cliente1.csprojResolveAssemblyReference.cache
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\Cliente1\obj\Debug\Cliente1.exe
+D:\Pos-Graduacao\DM113\FinalProjectWilsonRodolfo\Cliente1\obj\Debug\Cliente1.pdb

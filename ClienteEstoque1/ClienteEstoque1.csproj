@@ -51,11 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\ServicoEstoque\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -63,24 +58,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServicoEstoque\Service.wsdl" />
-    <None Include="Connected Services\ServicoEstoque\Service.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServicoEstoque\Service1.wsdl" />
-    <None Include="Connected Services\ServicoEstoque\Service1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServicoEstoque\Service2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServicoEstoque\Service3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServicoEstoque\Service4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServicoEstoque\ServicoEstoque.wsdl" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\EstoqueLibrary.Produto.datasource" />
   </ItemGroup>
@@ -92,24 +69,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ServicoEstoque\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServicoEstoque\Service.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServicoEstoque\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServicoEstoque\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\ServicoEstoque\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

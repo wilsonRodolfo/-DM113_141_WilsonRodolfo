@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
-using ClienteEstoque1.ServicoEstoque;
-using EstoqueLibrary;
+using EstoqueCliente.ServicoEstoque;
+//using EstoqueLibrary;
 
 namespace ClienteEstoque1
 {

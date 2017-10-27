@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Security;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
@@ -36,13 +37,13 @@ namespace EstoqueLibrary
     [ServiceContract(Namespace = "http://projetoavaliativo.dm113/02", Name = "IServicoEstoqueV2")]
     public interface IServicoEstoqueV2
     {
-        [OperationContract]
+        [OperationContract/*(ProtectionLevel = ProtectionLevel.Sign)*/]
         bool adicionarEstoque(string numeroProduto, int quantidade);
 
-        [OperationContract]
+        [OperationContract/*(ProtectionLevel = ProtectionLevel.Sign)*/]
         bool removerEstoque(string numeroProduto, int quantidade);
 
-        [OperationContract]
+        [OperationContract/*(ProtectionLevel = ProtectionLevel.Sign)*/]
         int consultarEstoque(string numeroProduto);
     }
 
